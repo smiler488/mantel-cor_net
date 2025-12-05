@@ -8,7 +8,8 @@ library(vegan)
 library(ggnewscale)
 
 # Read data and convert non-numeric variables to numeric codes for correlation/Mantel
-df <- read.csv("demo.csv", check.names = FALSE)
+input_path <- if (file.exists("demo.csv")) "demo.csv" else "Copy of data.csv"
+df <- read.csv(input_path, check.names = FALSE)
 vars <- c("Year","cultivar","Treatment","0-10cm AP","10-20cm AP","20-30cm AP","30-40cm AP","P-aMT","P-aMTR","P-aMCR","A-aMCR","PA","PT","P-aPCR","A-aPCR","PHI","PEP","BR","SP")
 df_sel <- df[, vars, drop = FALSE]
 df_num <- as.data.frame(lapply(df_sel, function(x) if (is.numeric(x)) x else as.numeric(as.factor(x))))
