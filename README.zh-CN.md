@@ -2,6 +2,7 @@
 
 [English](README.md) | 中文
 
+[![CI](https://github.com/smiler488/mantel-cor_net/actions/workflows/test.yml/badge.svg)](https://github.com/smiler488/mantel-cor_net/actions/workflows/test.yml) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) ![R 4.0+](https://img.shields.io/badge/R_4.0%2B-informational)
 一个 R 脚本，用来画土壤和作物论文里常见的"相关性热图 + Mantel 连线"图。上三角是各解释变量之间的 Pearson 相关；每个响应变量（产量、磷肥利用率等）都和每个解释变量连一条线，表示两者的 Mantel 检验结果：颜色表示 p 值，线宽表示 |r|，虚线表示负相关。
 
 这是我给一个磷肥试验做的图，想把不同土层的速效磷、根系和植株的磷性状、产量和 PUE 放在同一张图里。脚本只用 ggplot2 写成，布局的每个元素都可以自己改。
