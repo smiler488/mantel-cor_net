@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this script, please cite it as below."
+title: "mantel-cor_net: correlation heatmap with Mantel-test links in R"
+type: software
+authors:
+  - family-names: Deng
+    given-names: Liangchao
+repository-code: "https://github.com/smiler488/mantel-cor_net"
+license: MIT
+date-released: "2025-12-05"
+keywords:
+  - Mantel test
+  - correlation heatmap
+  - ggplot2
+  - agronomy
