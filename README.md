@@ -4,7 +4,7 @@ English | [中文](README.zh-CN.md)
 
 One R script that draws the "correlation heatmap + Mantel links" figure often seen in soil and crop papers. The upper triangle shows Pearson correlations among explanatory variables. Lines from each response variable (yield, phosphorus use efficiency and so on) to every explanatory variable show a Mantel test, with colour for p, width for |r| and dashes for negative r.
 
-I made it for a phosphorus trial where I wanted soil available P by depth, root and plant P traits, yield and PUE in one figure. The usual tool for this (linkET) was not on CRAN at the time and I needed full control over the layout, so it is plain ggplot2.
+I made it for a phosphorus trial where I wanted soil available P by depth, root and plant P traits, yield and PUE in one figure. It is plain ggplot2, so every element of the layout can be changed.
 
 ## Requirements
 
