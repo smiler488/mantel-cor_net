@@ -10,3 +10,9 @@ jobs:
           use-public-rspm: true
       - run: Rscript -e 'install.packages(c("ggplot2", "vegan", "ggnewscale", "svglite"))'
       - run: Rscript tests/check_outputs.R
+      - name: keep the rendered figure
+        run: Rscript cor_mantel_overlay.R demo.csv figure
+      - uses: actions/upload-artifact@v4
+        with:
+          name: demo-figure
+          path: figure.*
